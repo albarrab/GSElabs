@@ -1,0 +1,6 @@
+GSE Research Log
+================
+Author: Bader Albarrak
+Date: 7-2-2026
+Machine: Dept Lab Linux
+--- Lab 02: Measuring Energy ---
