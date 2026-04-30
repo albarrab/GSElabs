@@ -17,4 +17,8 @@ real values
 Idle power test:
 - echo Energy over 60s = 3461.690479 Joules 
 - echo Average idle power = 57.694841317 Watts 
-
+=== GCC Optimisation Comparison (N=3600) === 
+- gcc -O0: 187.53 s, 6687.199251 J 
+- gcc -O1: 55.12 s, 1919.87686 J 
+- gcc -O2: 55.19 s, 1944.274625 J 
+- gcc -O3: 57.83 s, 2054.171804 J
