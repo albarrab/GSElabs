@@ -22,3 +22,13 @@ Idle power test:
 - gcc -O1: 55.12 s, 1919.87686 J 
 - gcc -O2: 55.19 s, 1944.274625 J 
 - gcc -O3: 57.83 s, 2054.171804 J
+=== Language Comparison Summary (Lab 04) === 
+Results at N=1024, baseline compiler -O0: 
+- C (gcc -O0):            5.28 s, 194.837819 J 
+- Fortran (gfortran -O0): 5.66 s, 209.226088 J 
+- Python (matrices.py):   152.51 s, 5634.219341 J
+Results at N=3600 (best in each language): 
+- C (best: gcc -O1):           55,12 s, 1919.87686 J 
+- Fortran (best: ifx -O3):     23.31 s, 864.737655 J 
+- Python (predicted):      8720 s, 19032.774 J (extrapolated, NOT measured) 
+
