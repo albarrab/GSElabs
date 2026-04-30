@@ -31,4 +31,24 @@ Results at N=3600 (best in each language):
 - C (best: gcc -O1):           55,12 s, 1919.87686 J 
 - Fortran (best: ifx -O3):     23.31 s, 864.737655 J 
 - Python (predicted):      8720 s, 19032.774 J (extrapolated, NOT measured) 
+=== Lab 05: Numerical Libraries & Parallelism === 
 
+With BLAS (sequential):
+- C (icx, MKL seq): 0.89 s, 40.709613 J 
+- C (gcc, GNU BLAS): 3.63 s, 136.079425 J 
+- Fortran (ifx, MKL seq): 0.93 s, 37.264797 J 
+- Fortran (gfortran, GNU BLAS): 3.61 s, 131.141632 J 
+
+
+With Fortran intrinsic matmul: 
+- gfortran -O3: 1.63 s, 64.054889 J 
+- ifx -O3: 0.06 s, 2.877617 J 
+
+With Python NumPy: 
+- python matrices-numpy.py 3600: 0.01 s, 0.647643 J 
+
+With BLAS parallel (MKL): 
+- C (icx, OMP=1): 0.9 s, 35.120516 J 
+- C (icx, OMP=2): 0.47 s, 21.661993 J 
+- C (icx, OMP=4): 0.27 s, 15.467124 J 
+- C (icx, OMP=6): 0.19 s, 13.304165 J 
