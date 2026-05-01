@@ -64,22 +64,22 @@ Carbon Intensity sources used:
  Best implementation (lowest emissions): 
 - Language: 0.000100073 
 - Compiler: gfortran
- - Library: ___ 
- - Threads: ___ 
- - Energy: ___ J (___ kWh) 
- - Emissions (Gov):           ___ g CO₂e 
- - Emissions (ElectricityMaps): ___ g CO₂e 
- - Emissions (CI.org.uk):       ___ g CO₂e 
+ - Library:  
+ - Threads:  
+ - Energy:  J ( kWh) 
+ - Emissions (Gov):            g CO₂e 
+ - Emissions (ElectricityMaps):  g CO₂e 
+ - Emissions (CI.org.uk):        g CO₂e 
  
  Worst implementation (highest emissions):
- - Language: ___ 
-- Compiler: __
- - Library: ___ 
- - Threads: ___ 
- - Energy: ___ J (___ kWh) 
- - Emissions (Gov):           ___ g CO₂e 
- - Emissions (ElectricityMaps): ___ g CO₂e 
- - Emissions (CI.org.uk):       ___ g CO₂e 
+ - Language: 
+- Compiler: 
+ - Library:  
+ - Threads:  
+ - Energy:  J ( kWh) 
+ - Emissions (Gov):            g CO₂e 
+ - Emissions (ElectricityMaps):  g CO₂e 
+ - Emissions (CI.org.uk):        g CO₂e 
  
       === Lab 07 === 
       
@@ -100,4 +100,38 @@ Carbon Intensity sources used:
  - Forecast CI:  67 g/kWh 
  - Source: carbonintensity.org.uk forecast
  
-    === Lab 07: Carbon Savings === 
+ 
+ ======= LAB 09 ========
+ 
+ Batch Size | Energy (J) | Time (s) | Accuracy | CO₂ (g)
+-------------------------------------------------------------
+         1 |     26.121 |   0.443 | 0.968 | 0.000965
+         8 |      4.469 |   0.070 | 0.968 | 0.000165
+        32 |      2.711 |   0.038 | 0.968 | 0.000100
+       128 |      1.420 |   0.018 | 0.968 | 0.000052
+       512 |      1.000 |   0.012 | 0.968 | 0.000037
+       
+ What can you deduce? 
+ At width=512, larger batch sizes reduced energy per inference . Accuracy was stable across batch sizes. The most energy-efficient batch size was 512.      
+ 
+ === Effect of Model Width on Energy and Accuracy === 
+ 
+  Width | Energy (J) | Time (s) | Accuracy (%) | g CO₂e
+  ------|------------|----------|--------------|---------
+  256   |      1.000 |   0.012  | 0.968        | 0.000037
+  512   |       2.078|   0.022  | 0.971        | 0.000077      
+  1024  |       5.350|   0.057  | 0.977        | 0.000198        
+  
+  
+  
+  Experiment 3: Estimating Training Cost
+  
+  Energy_inference = 308.678470 J 
+  Time_inference = 5.49 s      
+  
+  Second Run :
+   Energy_train+inference = 306.065378 J 
+   Time_train+inference = 5.38 s 
+   
+Energy_training  = 306.065378 - 308.678470 =  -2.613092 J
+Time_training    = 5.38  -  5.49  =  -0.11 s 

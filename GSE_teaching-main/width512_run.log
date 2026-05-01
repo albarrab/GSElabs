@@ -1,0 +1,14 @@
+Model with width= 512
+No pre-trained model for width= 512 
+Training...
+Training model (about 10 seconds)...
+Training complete. Model saved.
+Live carbon intensity (gCO2/kWh): 133
+
+Batch Size | Energy (J) | Time (s) | Accuracy | CO₂ (g)
+-------------------------------------------------------------
+         1 |     32.342 |   0.537 | 0.971 | 0.001195
+         8 |      6.101 |   0.091 | 0.971 | 0.000225
+        32 |      5.036 |   0.065 | 0.971 | 0.000186
+       128 |      2.642 |   0.031 | 0.971 | 0.000098
+       512 |      2.078 |   0.022 | 0.971 | 0.000077

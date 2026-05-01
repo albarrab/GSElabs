@@ -1,0 +1,10 @@
+Model with width= 512
+Loaded pre-trained MNIST model for width= 512
+Live carbon intensity (gCO2/kWh): 109
+
+Precision | Energy (J) | Time (s) | Accuracy | CO₂ (g)
+-------------------------------------------------------------
+fp64      |     19.322 |   0.294 | 0.971 | 0.000585
+fp32      |      6.008 |   0.088 | 0.971 | 0.000182
+fp16      |     13.317 |   0.190 | 0.971 | 0.000403
+bf16      |     18.320 |   0.298 | 0.971 | 0.000555
