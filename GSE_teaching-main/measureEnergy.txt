@@ -81,6 +81,23 @@ Carbon Intensity sources used:
  - Emissions (ElectricityMaps): ___ g CO₂e 
  - Emissions (CI.org.uk):       ___ g CO₂e 
  
+      === Lab 07 === 
+      
+      
  % reduction (best vs gcc -O0 baseline): 
  - Energy: ___% 
  - CO₂e (Gov): ___% 
+ 
+ Today's regional CI snapshot (date/time: 01-05-26/22:00): 
+ - United Kingdom:  221 g/kWh 
+ - Frnce : 12 g/kWh 
+ - Spain:   72 g/kWh 
+ - Germany:  224 g/kWh 
+ - Lowest region today: France 
+ 
+ Forecast greenest time (next 48h): 
+ - Date/Time:    02-05-26/ 13:00
+ - Forecast CI:  67 g/kWh 
+ - Source: carbonintensity.org.uk forecast
+ 
+    === Lab 07: Carbon Savings === 
