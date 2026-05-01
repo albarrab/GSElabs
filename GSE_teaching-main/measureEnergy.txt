@@ -52,3 +52,35 @@ With BLAS parallel (MKL):
 - C (icx, OMP=2): 0.47 s, 21.661993 J 
 - C (icx, OMP=4): 0.27 s, 15.467124 J 
 - C (icx, OMP=6): 0.19 s, 13.304165 J 
+
+Record in your research log: 
+=== Carbon Emissions Summary (N=3600) ===
+
+Carbon Intensity sources used: 
+- Gov 2025 annual: 0.177 kg CO₂e/kWh 
+ - ElectricityMaps ( 11-05-26/11:30am ): =0.124456208 g CO₂e/kWh _ 
+- carbonintensity.org.uk (11-05-26/11:30am): 67 g CO₂e/kWh 
+
+ Best implementation (lowest emissions): 
+- Language: 0.000100073 
+- Compiler: gfortran
+ - Library: ___ 
+ - Threads: ___ 
+ - Energy: ___ J (___ kWh) 
+ - Emissions (Gov):           ___ g CO₂e 
+ - Emissions (ElectricityMaps): ___ g CO₂e 
+ - Emissions (CI.org.uk):       ___ g CO₂e 
+ 
+ Worst implementation (highest emissions):
+ - Language: ___ 
+- Compiler: __
+ - Library: ___ 
+ - Threads: ___ 
+ - Energy: ___ J (___ kWh) 
+ - Emissions (Gov):           ___ g CO₂e 
+ - Emissions (ElectricityMaps): ___ g CO₂e 
+ - Emissions (CI.org.uk):       ___ g CO₂e 
+ 
+ % reduction (best vs gcc -O0 baseline): 
+ - Energy: ___% 
+ - CO₂e (Gov): ___% 
