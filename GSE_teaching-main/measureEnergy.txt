@@ -135,3 +135,21 @@ Carbon Intensity sources used:
    
 Energy_training  = 306.065378 - 308.678470 =  -2.613092 J
 Time_training    = 5.38  -  5.49  =  -0.11 s 
+
+
+    === Lab 10: Hardware Comparison ===
+    
+Default lab (DBC353):
+
+- Hostname: dbc353-pc-12
+- CPU: Intel Core i7-8700, 6 cores @ 3.2 GHz
+- L3 cache: 12 MB
+- Generation: ~2017 (Coffee Lake), TDP 65 W
+   
+Alternative lab :
+   
+- Hostname: e004-pc-07
+- CPU: Intel(R) Core(TM) i9-11900K @ 3.50GHz
+- L3 cache: 16 MiB (1 instance)
+- Generation: 11th Gen 
+   
